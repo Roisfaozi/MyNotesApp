@@ -104,7 +104,7 @@ class NoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }else{
                 note?.date = getCurrentDate()
-                values.put(DATE, getCurrentDate())
+                values.put(DatabaseContract.NoteColumns.DATE, getCurrentDate())
                 val result = noteHelper.insert(values)
 
                 if (result>0){

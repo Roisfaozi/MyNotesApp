@@ -11,11 +11,11 @@ internal class DatabaseHelper(context: Context): SQLiteOpenHelper(context, DATAB
 
         private const val DATABASE_VERSION = 1
 
-        private val SQL_CREATE_TABLE_NOTE = "CRATE TABLE $TABLE_NAME" +
+        private val SQL_CREATE_TABLE_NOTE = "CREATE TABLE $TABLE_NAME" +
                 " (${DatabaseContract.NoteColumns._ID} INTEGER PRIMARY KEY AUTOINCREMENT," +
                 " ${DatabaseContract.NoteColumns.TITLE} TEXT NO NULL," +
                 " ${DatabaseContract.NoteColumns.DESCRIPTION} TEXT NO NULL," +
-                " ${DatabaseContract.NoteColumns.DATE} TEXT NO NULL,)"
+                " ${DatabaseContract.NoteColumns.DATE} TEXT NO NULL)"
     }
 
     override fun onCreate(db : SQLiteDatabase) {
