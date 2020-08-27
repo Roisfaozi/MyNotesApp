@@ -42,6 +42,9 @@ class NoteAddUpdateActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_note_add_update)
 
         noteHelper = NoteHelper.getInstance(applicationContext)
+        noteHelper.open()
+
+        note = intent.getParcelableExtra(EXTRA_NOTE)
         if (note != null){
             position = intent.getIntExtra(EXTRA_POSITION, 0)
             isEdit = true

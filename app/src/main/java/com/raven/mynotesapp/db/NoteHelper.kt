@@ -62,4 +62,5 @@ class NoteHelper(context: Context) {
     fun deleteById(id: String): Int {
         return database.delete(DATABASE_TABLE, "$_ID = '$id'", null)
     }
+
 }
