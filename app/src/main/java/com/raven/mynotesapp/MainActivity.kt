@@ -1,24 +1,23 @@
 package com.raven.mynotesapp
 
 import android.content.Intent
-import android.database.ContentObservable
 import android.database.ContentObserver
-import android.os.*
-import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.os.Handler
+import android.os.HandlerThread
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
-.Helper.MappingHelper
-.adapter.NoteAdapter
-.db.DatabaseContract.NoteColumns.Companion.CONTENT_URI
-.db.NoteHelper
-.entity.Note
+import com.raven.mynotesapp.Helper.MappingHelper
+import com.raven.mynotesapp.adapter.NoteAdapter
+import com.raven.mynotesapp.db.DatabaseContract.NoteColumns.Companion.CONTENT_URI
+import com.raven.mynotesapp.entity.Note
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
-import kotlin.math.E
 
 class MainActivity : AppCompatActivity() {
 

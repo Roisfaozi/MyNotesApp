@@ -1,8 +1,9 @@
 package com.raven.mynotesapp.Helper
 
+
 import android.database.Cursor
-.db.DatabaseContract
-.entity.Note
+import com.raven.mynotesapp.db.DatabaseContract
+import com.raven.mynotesapp.entity.Note
 
 object MappingHelper {
 

@@ -3,19 +3,17 @@ package com.raven.mynotesapp
 import android.content.ContentValues
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-.Helper.MappingHelper
-.db.DatabaseContract
-.db.DatabaseContract.NoteColumns.Companion.CONTENT_URI
-.db.DatabaseContract.NoteColumns.Companion.DATE
-.db.NoteHelper
-.entity.Note
+import androidx.appcompat.app.AppCompatActivity
+import com.raven.mynotesapp.Helper.MappingHelper
+import com.raven.mynotesapp.db.DatabaseContract
+import com.raven.mynotesapp.db.DatabaseContract.NoteColumns.Companion.CONTENT_URI
+import com.raven.mynotesapp.entity.Note
 import kotlinx.android.synthetic.main.activity_note_add_update.*
 import java.text.SimpleDateFormat
 import java.util.*

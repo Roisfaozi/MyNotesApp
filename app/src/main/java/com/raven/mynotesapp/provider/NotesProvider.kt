@@ -6,10 +6,11 @@ import android.content.Context
 import android.content.UriMatcher
 import android.database.Cursor
 import android.net.Uri
-.db.DatabaseContract.AUTHORITY
-.db.DatabaseContract.NoteColumns.Companion.CONTENT_URI
-.db.DatabaseContract.NoteColumns.Companion.TABLE_NAME
-.db.NoteHelper
+import com.raven.mynotesapp.db.DatabaseContract.AUTHORITY
+import com.raven.mynotesapp.db.DatabaseContract.NoteColumns.Companion.CONTENT_URI
+import com.raven.mynotesapp.db.DatabaseContract.NoteColumns.Companion.TABLE_NAME
+import com.raven.mynotesapp.db.NoteHelper
+
 
 class NotesProvider : ContentProvider() {
 
