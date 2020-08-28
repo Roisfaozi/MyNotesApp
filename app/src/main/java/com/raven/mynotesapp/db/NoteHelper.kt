@@ -4,8 +4,8 @@ import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
-import com.raven.mynotesapp.db.DatabaseContract.NoteColumns.Companion.TABLE_NAME
-import com.raven.mynotesapp.db.DatabaseContract.NoteColumns.Companion._ID
+.db.DatabaseContract.NoteColumns.Companion.TABLE_NAME
+.db.DatabaseContract.NoteColumns.Companion._ID
 import java.sql.SQLException
 
 class NoteHelper(context: Context) {
