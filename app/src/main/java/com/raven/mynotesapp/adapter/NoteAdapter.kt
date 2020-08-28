@@ -6,12 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-.CustomOnItemClickListener
-.NoteAddUpdateActivity
-.R
-.entity.Note
+import com.raven.mynotesapp.CustomOnItemClickListener
+import com.raven.mynotesapp.NoteAddUpdateActivity
+import com.raven.mynotesapp.R
+import com.raven.mynotesapp.entity.Note
 import kotlinx.android.synthetic.main.item_note.view.*
-import java.lang.reflect.Array.set
+
 
 class NoteAdapter(private val activity: Activity) : RecyclerView.Adapter<NoteAdapter.NoteViewHolder>(){
 
